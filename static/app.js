@@ -27,6 +27,12 @@ const apiService = {
         if (!response.ok) throw new Error('Failed to fetch chat history');
         return response.json();
     },
+
+    async getJobRoles() {
+        const response = await fetch('/api/job-roles');
+        if (!response.ok) throw new Error('Failed to fetch job roles');
+        return response.json();
+    },
 };
 
 /**
@@ -49,6 +55,46 @@ const Notification = ({ message, type, onClose }) => {
         <div className={`${bgColor} text-white text-sm px-4 py-2 rounded-lg shadow-lg fade-in flex items-center`}>
             <i data-lucide={icon} className="w-4 h-4 mr-2"></i>
             {message}
+        </div>
+    );
+};
+
+/**
+ * JobRoles Component
+ * Fetches and displays job roles from the API.
+ */
+const JobRoles = () => {
+    const [jobRoles, setJobRoles] = useState([]);
+
+    useEffect(() => {
+        const fetchJobRoles = async () => {
+            try {
+                const roles = await apiService.getJobRoles();
+                setJobRoles(roles);
+            } catch (error) {
+                console.error('Error fetching job roles:', error);
+            }
+        };
+
+        fetchJobRoles();
+    }, []);
+
+    return (
+        <div className="mb-4">
+            <h2 className="text-xl font-semibold">Job Roles</h2>
+            <ul>
+                {jobRoles.map(role => (
+                    <li key={role.id} className="mb-2">
+                        <h3 className="font-bold">{role.id}</h3>
+                        <p>{role.description}</p>
+                        <ul className="list-disc list-inside">
+                            {role.checklist.map((item, index) => (
+                                <li key={index}>{item}</li>
+                            ))}
+                        </ul>
+                    </li>
+                ))}
+            </ul>
         </div>
     );
 };
@@ -151,6 +197,8 @@ const Chat = () => {
     return (
         <div className="md:w-[600px] w-full mx-auto bg-white rounded-xl shadow-2xl overflow-hidden">
             <Header />
+            {/* <JobRoles /> */}
+            <PreClickPrompts />
             <ChatWindow
                 messages={messages}
                 isLoading={isLoading}
@@ -179,7 +227,7 @@ const Chat = () => {
 const Header = () => (
     <header className="bg-gradient-to-r from-indigo-600 to-indigo-800 text-white p-6 py-4">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-            <h1 className="text-xl font-bold">Demo: Bank Customer Support</h1>
+            <h1 className="text-xl font-bold">Console Careers Chatbot</h1>
             <div className="flex items-center text-sm space-x-2 mt-2 sm:mt-0 justify-end pl-8">
                 <span>
                     Powered by
@@ -192,6 +240,43 @@ const Header = () => (
         </div>
     </header>
 );
+
+/**
+ * PreClickPrompts Component
+ * Displays a set of pre-click prompts to guide users.
+ */
+const PreClickPrompts = () => {
+    const prompts = [
+        "Tell me about the AI Engineer role.",
+        "What does a Product Designer do at Console?",
+        "Describe the responsibilities of a Full-stack Software Engineer.",
+        "What is the role of a Founding Account Executive?",
+        "How can I apply for a job at Console?",
+        "Why did Alex Ovabor build this application?"
+    ];
+
+    const handlePromptClick = (prompt) => {
+        document.getElementById('user-input').value = prompt;
+        document.getElementById('send-button').click();
+    };
+
+    return (
+        <div className="p-4">
+            <h2 className="text-lg font-semibold mb-2">Ask about our roles:</h2>
+            <div className="flex flex-wrap gap-2">
+                {prompts.map((prompt, index) => (
+                    <button
+                        key={index}
+                        onClick={() => handlePromptClick(prompt)}
+                        className="bg-indigo-500 text-white px-4 py-2 rounded-lg hover:bg-indigo-600 transition-all duration-200"
+                    >
+                        {prompt}
+                    </button>
+                ))}
+            </div>
+        </div>
+    );
+};
 
 /**
  * ChatWindow Component
@@ -248,11 +333,13 @@ const ChatWindow = React.memo(
                         placeholder="Ask a question..."
                         className="flex-grow px-4 py-2 focus:outline-none"
                         disabled={isLoading} // Disable while loading
+                        id="user-input"
                     />
                     <button
                         type="submit"
                         className="bg-indigo-500 text-white px-6 py-2 hover:bg-indigo-600 disabled:opacity-50 transition-all duration-200 flex items-center"
                         disabled={isLoading} // Disable while loading
+                        id="send-button"
                     >
                         <span>{isLoading ? 'Sending...' : 'Send'}</span>
                         <i data-lucide={isLoading ? 'loader' : 'send'} className="w-4 h-4 ml-2"></i>
@@ -310,10 +397,10 @@ const Footer = () => (
     <footer className="bg-gray-100 p-6 py-4 text-center text-sm text-gray-600 border-t border-gray-200">
         <p className="flex items-center justify-center">
             <span>Built by</span>
-            <a href="https://multinear.com" target="_blank" className="text-indigo-600 hover:text-indigo-800 px-1">Multinear</a>
-            2024 
+            <a href="https://github.com/aovabo/console-careerpage-chatbot.py" target="_blank" className="text-indigo-600 hover:text-indigo-800 px-1">Alex Ovabor</a>
+            2025 for the role of IT Solutions Engineer (ex-Sysadmin)
             <span className="text-gray-400 px-2">|</span>
-            <a href="https://github.com/multinear-demo/demo-bank-support-lc-py" 
+            <a href="https://github.com/aovabo/console-careerpage-chatbot.py" 
                 target="_blank" 
                 className="text-indigo-600 hover:text-indigo-800 flex items-center">
                 <span className="border border-gray-500 rounded-full p-1 mr-1">
@@ -322,7 +409,7 @@ const Footer = () => (
                 Repo
             </a>
             <span className="text-gray-400 px-2">|</span>
-            <a href="https://multinear.com/docs/" 
+            <a href="https://github.com/aovabo/ai-systems-engineering" 
                 target="_blank" 
                 className="text-indigo-600 hover:text-indigo-800 flex items-center">
                 <span className="border border-gray-500 rounded-full p-1 mr-1">

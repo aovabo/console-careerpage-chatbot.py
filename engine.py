@@ -14,7 +14,11 @@ from langchain.chains import ConversationalRetrievalChain
 import os
 from typing import Tuple, List
 from pathlib import Path
+import logging
 
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 class RAGEngine:
     """
@@ -43,19 +47,35 @@ class RAGEngine:
         """
         (Re)build the document index by processing all documents in the data directory.
         """
-        # Load the document
-        loader = TextLoader(str(Path(__file__).parent / "data" / "acme_bank_faq.txt"))
-        documents = loader.load()
+        try:
+            # Define the document path
+            document_path = Path(__file__).parent / "data" / "console_careers.txt"
+            logger.info(f"Loading document from {document_path}")
 
-        # Split documents into chunks
-        text_splitter = RecursiveCharacterTextSplitter(
-            chunk_size=1000,
-            chunk_overlap=200
-        )
-        splits = text_splitter.split_documents(documents)
+            # Check if the document exists
+            if not document_path.exists():
+                raise FileNotFoundError(f"Document file not found at {document_path}")
 
-        # Create vector store
-        self.vector_store = FAISS.from_documents(splits, self.embeddings)
+            # Load the document
+            loader = TextLoader(str(document_path))
+            documents = loader.load()
+
+            # Split documents into chunks
+            text_splitter = RecursiveCharacterTextSplitter(
+                chunk_size=1000,
+                chunk_overlap=200
+            )
+            splits = text_splitter.split_documents(documents)
+
+            # Create vector store
+            self.vector_store = FAISS.from_documents(splits, self.embeddings)
+            logger.info("Document index refreshed successfully")
+        except FileNotFoundError as e:
+            logger.error(e)
+            raise RuntimeError("Document file not found. Please ensure the file exists at the specified path.")
+        except Exception as e:
+            logger.error(f"Error refreshing index: {e}")
+            raise RuntimeError(f"Error refreshing index: {e}")
 
     async def process_query(
         self, msg_list: List[Tuple[str, bool]]
@@ -103,5 +123,5 @@ class RAGEngine:
 
             return result["answer"], []
         except Exception as e:
-            print(e)
+            logger.error(f"Error processing request: {e}")
             return "Error processing request. Try again.", []

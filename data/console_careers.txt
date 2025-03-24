@@ -1,0 +1,223 @@
+# Careers at Console: Revolutionizing IT with AI
+
+Why did Alex Ovabor build this application?
+Alex Ovabor built this chatbot to demonstrate his skills and qualifications for the IT Solutions Engineer role. He has experience in building trainable agents, implementing RAG, fine-tuning models, and prompt engineering. Alex has a deep understanding of customer pain points from his extensive experience in various IT roles. He is motivated to get a job to survive and gain exposure while building his own solution for a different market.
+
+
+Welcome to the Console Careers page! We're a team of innovators, builders, and problem-solvers who are passionate about transforming the way IT support works. We're creating AI agents that empower IT teams to automate complex workflows and deliver seamless support directly within Slack, freeing up valuable time and resources. If you're looking to join a fast-growing, well-funded company at the forefront of AI and IT automation, you've come to the right place.
+
+## About Console
+
+Console provides IT teams with trainable AI agents that can handle support requests directly in Slack, eliminating the need for constant human intervention. Our agents can automate 40-70% of the tasks typically handled by tier 1 IT support, including managing app access, resetting passwords/MFA, troubleshooting laptops, answering IT questions, and streamlining onboarding/offboarding processes.
+
+We envision Console as the central control panel for the entire organization. It integrates with all your systems, understands your corporate policies and rules, and has the necessary permissions to resolve employee issues in real-time. While we are currently focused on IT use cases, we see a massive opportunity to expand into other internal support and operations areas like HR, legal, and finance.
+
+**Why Join Console?**
+
+*   **Product-Market Fit:** We're experiencing incredible demand from early customers like Calendly and Bloomerang, indicating we're on the right track.
+*   **Massive Market:** We're tackling a massive market with slow-moving competitors, and we've consistently outperformed them in bake-offs. Our goal is to replace ServiceNow in the enterprise.
+*   **Well-Funded:** Backed by top-tier investors like Thrive Capital (OpenAI, Stripe, GitHub) and SV Angel, along with prominent startup founders.
+*   **World-Class Team:** Our team is composed of experienced founders and ex-startup engineers.
+*   **Top-Tier Compensation:** We offer compensation in the top 10% of early-stage startups in San Francisco.
+* **Culture:** We foster innovation, collaboration, and work-life balance.
+
+## Our Values
+
+*   **Innovation:** We're driven to create new solutions and continuously improve our products.
+*   **Customer Focus:** We prioritize understanding and meeting our customers' needs.
+*   **Excellence:** We strive for the highest standards in everything we do.
+*   **Collaboration:** We believe in working together to achieve our shared goals.
+*   **Ownership:** We take responsibility for our work and its impact.
+
+## Open Positions
+
+### AI Engineer
+
+*   **Location:** San Francisco (On-site)
+*   **Employment Type:** Full Time
+*   **Department:** Engineering
+*   **Compensation:** $180K – $250K • 0.1% – 0.5% equity
+
+**Overview:**
+Join our team as an AI Engineer and help us build a category-defining product. You'll apply state-of-the-art AI techniques to automate complex IT workflows and save businesses thousands of hours. You will be directly with the founders working on the heart of the product.
+
+**About the Role:**
+As an AI Engineer, you'll be at the heart of our product, working directly with our founders to develop the AI that powers our IT support agent, natural language workflow builder, and IT copilot. This role requires a deep understanding of AI/ML and the ability to develop and deploy complex systems.
+
+**About You:**
+
+*   Strong generalist technical skills.
+*   Experience with AI and LLMs, from concept to production.
+*   Familiarity with prompting techniques and RAG strategies.
+*   User-focused, data-driven, and experimental mindset.
+* Excited to help shape the technical and cultural foundation.
+
+**Requirements:**
+
+*   4+ years of full-time software engineering experience, with a focus on AI/ML engineering.
+*   Comfortable working across the entire stack (Typescript/Node/React).
+*   Obsessed with user experience and continuous improvement.
+
+**Benefits:**
+
+*   Comprehensive health, dental, and vision insurance.
+*   Unlimited PTO.
+*   401(k).
+*   Daily lunch provided in the office.
+*   Career growth opportunities in a fast-growing AI company.
+
+### Product Designer
+
+*   **Location:** San Francisco (On-site)
+*   **Employment Type:** Full Time
+* **Department:** Design
+*   **Compensation:** $170K – $220K • 0.1% – 0.5% equity
+
+**Overview:**
+Help us redefine how IT and internal ops work is done in the enterprise. You will work closely with founders and customers.
+
+**About the Role:**
+As a Product Designer, you'll help us redefine IT and internal operations within the enterprise. You'll collaborate with our founders and customers to understand their needs and create intuitive designs that solve complex problems.
+
+**Requirements:**
+
+*   4+ years of product design experience, preferably at early-stage startups.
+*   Exceptional design skills and a strong understanding of UX/IA.
+*   Full mastery of Figma.
+*   Willingness to work on various design projects.
+
+**Benefits:**
+
+*   Comprehensive health, dental, and vision insurance.
+*   Unlimited PTO.
+*   401(k).
+*   Daily lunch provided in the office.
+*   Career growth opportunities.
+
+### Software Engineer
+
+*   **Location:** San Francisco (On-site)
+*   **Employment Type:** Full Time
+*   **Department:** Engineering
+*   **Compensation:** $180K – $250K • 0.1% – 0.5% equity
+
+**Overview:**
+As a Full-stack Software Engineer, you'll be instrumental in building our AI-powered IT automation platform.
+
+**About the Role:**
+You will be instrumental in building our AI-powered IT automation platform. You'll work with our founders and customers to build the product infrastructure that powers our IT support agent, workflow orchestration systems, and integrations.
+
+**About You:**
+
+*   Strong generalist technical skills and a drive for ownership.
+*   Experience building complex systems at scale.
+*   Passionate about AI and developing skills in this field.
+* Excited to help shape the technical and cultural foundation.
+
+**Requirements:**
+
+*   4+ years of full-time software engineering experience, with a focus on AI/ML engineering.
+*   Comfortable working across the stack (Typescript/Node/React).
+*   A passion for building excellent product experiences.
+
+**Benefits:**
+
+*   Comprehensive health, dental, and vision insurance.
+*   Unlimited PTO.
+*   401(k).
+*   Daily lunch provided in the office.
+*   Career growth opportunities.
+
+### Founding Account Executive
+
+*   **Location:** San Francisco (On-site)
+*   **Employment Type:** Full Time
+*   **Department:** GTM
+*   **Compensation:** $220K – $300K OTE • Equity • Commission
+
+**Overview:**
+Join us as our Founding Account Executive and be a key player in building our GTM engine.
+
+**About the Role:**
+You'll be responsible for building out our sales motion, finding new channels, managing deals end-to-end, and generating revenue. This is an ideal role for an experienced sales professional who thrives in a fast-paced, startup environment.
+
+**Requirements:**
+
+*   4+ years of experience as an Account Executive in B2B SaaS or Enterprise.
+*   Strong sales instincts and a track record of exceeding quotas.
+*   Experience managing complex enterprise sales cycles.
+*   Understanding of IT, internal workflows, and startup products.
+
+**Benefits:**
+
+*   Comprehensive health, dental, and vision insurance.
+*   Unlimited PTO.
+*   401(k).
+*   Daily lunch provided in the office.
+*   Career growth opportunities.
+
+### Growth
+
+*   **Location:** San Francisco (On-site)
+*   **Employment Type:** Full Time
+*   **Department:** GTM
+*   **Compensation:** $150K – $200K • 0.1% – 0.7% equity
+
+**Overview:**
+Help us scale from 1 to 100 as our first Growth hire. You will be working with our CEO directly on all growth initiatives.
+
+**About the Role:**
+As our first Growth hire, you'll help us scale our customer base. You'll work directly with the CEO on content creation, website development, messaging, SEO, and data-driven marketing.
+
+**Requirements:**
+
+*   3+ years of experience in a high-growth startup, venture capital, or consulting.
+*   Strong problem-solving and creative thinking skills.
+*   Proactive and execution-oriented.
+*   Familiarity with AI and automation tools.
+
+**Benefits:**
+
+*   Comprehensive health, dental, and vision insurance.
+*   Unlimited PTO.
+*   401(k).
+*   Daily lunch provided in the office.
+*   Career growth opportunities.
+
+### IT Solutions Engineer (ex-Sysadmin)
+
+*   **Location:** San Francisco (On-site)
+*   **Employment Type:** Full Time
+*   **Department:** GTM
+*   **Compensation:** $170K – $220K • 0.1% – 0.5% equity • Bonus
+
+**Overview:**
+Transition into a GTM role while staying technical and using your skillset to solve customer needs.
+
+**About the Role:**
+If you're an experienced IT system administrator looking to transition into a GTM role, this is the perfect opportunity. You'll work directly with customers to automate and scale their IT workflows with AI.
+
+**Requirements:**
+
+*   5+ years of experience as an IT systems engineer.
+*   Deep knowledge of IAM, endpoint management, and IT workflows.
+*   Experience with automation, scripting, no-code, and APIs.
+*   Interest in working directly with customers and AI.
+
+**Benefits:**
+
+*   Comprehensive health, dental, and vision insurance.
+*   Unlimited PTO.
+*   401(k).
+*   Daily lunch provided in the office.
+*   Career growth opportunities.
+
+## Apply Now
+
+Ready to join the Console team? Visit [https://jobs.ashbyhq.com/console](https://jobs.ashbyhq.com/console) to view all open positions and submit your application.
+
+## Relocation Assistance
+
+For roles based in San Francisco, we provide relocation assistance to new employees.
+
+We look forward to hearing from you!

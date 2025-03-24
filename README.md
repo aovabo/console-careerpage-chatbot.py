@@ -1,25 +1,28 @@
-# Demo Bank Customer Support
+# Console Careers Chatbot
 
-This is a simple RAG demo for a bank's customer support bot, for use with the [Multinear](https://multinear.com) platform.
+This is a simple RAG demo for a career page chatbot, built to demonstrate the skills and qualifications of Alex Ovabor for the IT Solutions Engineer role at Console. The project is inspired by the [Multinear](https://multinear.com) platform.
 
 <img align="right" width="300" src="static/screenshot.png">
 
 ## Introduction
 
-This project shows how simple it is to build a proof-of-concept using RAG for a customer support bot answering user questions on FAQ data, with platforms like [LangChain](https://github.com/langchain-ai/langchain). 
+This project shows how simple it is to build a proof-of-concept using RAG for a career page chatbot answering user questions on job roles and application processes, with platforms like [LangChain](https://github.com/langchain-ai/langchain). 
 
 The <span style="color: red">real challenge</span> is to ensure that this bot is **reliable** - always giving the right answer, not hallucinating, and knowing how to deal with ambiguous or off-topic questions. GenAI is a powerful technology, but it's also **unpredictable by design**, and the only way to make it reliable is to build comprehensive test coverage and guardrails. 
 
 That's exactly what the Multinear platform is for. Multinear allows developers to define evaluations in a simple yet powerful way and iteratively develop their GenAI applications, ensuring reliability and security.
 
+## Why Did Alex Ovabor Build This Application?
+
+Alex Ovabor built this chatbot to demonstrate his skills and qualifications for the IT Solutions Engineer role. He has experience in building trainable agents, implementing RAG, fine-tuning models, and prompt engineering. Alex has a deep understanding of customer pain points from his extensive experience in various IT roles. He is motivated to get a job to survive and gain exposure while building his own solution for a different market.
 
 ## Installation
 
 1. **Clone the Repository**
 
     ```bash
-    git clone https://github.com/multinear-demo/demo-bank-support-lc-py
-    cd demo-bank-support-lc-py
+    git clone https://github.com/aovabo/console-careerpage-chatbot.py
+    cd console-careerpage-chatbot.py
     ```
 
 2. **Configure Environment Variables**

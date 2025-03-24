@@ -4,13 +4,14 @@ Provides REST API endpoints for:
 - Chat interactions with RAG-powered responses
 - Chat history management
 - Index refresh functionality (vector database)
+- Job roles fetching
 Also serves the static frontend files.
 
 The server uses FastAPI with CORS enabled and maintains chat sessions using an
 in-memory store.
 """
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
@@ -21,6 +22,7 @@ from session import SessionManager
 from dotenv import load_dotenv
 
 from tracing import init_tracing
+from config_loader import load_config  # Ensure this import is correct
 
 
 load_dotenv()
@@ -101,6 +103,25 @@ async def get_history(session_id: str):
     """
     history = session_manager.get_history(session_id)
     return history
+
+
+@app.get("/api/job-roles", tags=["chat"])
+async def get_job_roles():
+    """
+    Retrieve the job roles from the configuration file.
+    """
+    config = load_config()
+    tasks = config.get('tasks', [])
+    job_roles = [
+        {
+            "id": task['id'],
+            "description": task['input'],
+            "checklist": task['checklist'].split('\n')
+        }
+        for task in tasks
+    ]
+    return job_roles
+
 
 # Mount static files (frontend)
 app.mount("/", StaticFiles(directory="./static", html=True), name="frontend")
