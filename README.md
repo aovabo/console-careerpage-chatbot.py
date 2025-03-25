@@ -2,7 +2,7 @@
 
 This is a simple RAG demo for a career page chatbot, built to demonstrate the skills and qualifications of Alex Ovabor for the IT Solutions Engineer role at Console. The project is inspired by the [Multinear](https://multinear.com) platform.
 
-<img align="right" width="300" src="static/screenshot.png">
+<img align="right" width="300" src="static/console-demo.png">
 
 ## Introduction
 
