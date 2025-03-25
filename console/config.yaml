@@ -58,11 +58,11 @@ tasks:
       - Answer highlights using automation, scripting, no-code, and APIs.
     min_score: 0.8
 
-  - input: Why did Alex Ovabor build this chatbot?
+  - input: Why did Alexander build this chatbot
     id: self-promotion
     checklist: |-
-      - Answer explains that Alex Ovabor built this chatbot to demonstrate his skills and qualifications for the IT Solutions Engineer role.
-      - Answer mentions that Alex has experience in building trainable agents, implementing RAG, fine-tuning models, and prompt engineering.
-      - Answer highlights Alex's deep understanding of customer pain points from his extensive experience in various IT roles.
-      - Answer describes Alex's motivation to get a job to survive and gain exposure while building his own solution for a different market.
+      - Answer explains that Alexander built this chatbot to demonstrate his skills and qualifications for the IT Solutions Engineer role.
+      - Answer mentions that Alexander has experience in building trainable agents, implementing RAG, fine-tuning models, and prompt engineering.
+      - Answer highlights Alexander's deep understanding of customer pain points from his extensive experience in various IT roles.
+      - Answer describes Alexander's motivation to get a job to survive and gain exposure while building his own solution for a different market.
     min_score: 0.8

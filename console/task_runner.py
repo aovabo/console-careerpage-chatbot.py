@@ -1,5 +1,5 @@
 """
-Multinear platform integration module for the Bank Customer Support app.
+Multinear platform integration module for the Console Career Page Chatbot.
 This module serves as the entry point for the Multinear platform,
 allowing testing and evaluation of the RAG system.
 

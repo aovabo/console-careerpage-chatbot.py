@@ -12,7 +12,7 @@ The <span style="color: red">real challenge</span> is to ensure that this bot is
 
 That's exactly what the Multinear platform is for. Multinear allows developers to define evaluations in a simple yet powerful way and iteratively develop their GenAI applications, ensuring reliability and security.
 
-## Why Did Alex Ovabor Build This Application?
+## Why Did Alex Build This Application?
 
 Alexander built this chatbot to demonstrate his skills and qualifications for the IT Solutions Engineer role. He has experience in building trainable agents, implementing RAG, fine-tuning models, and prompt engineering. Alex has a deep understanding of customer pain points from his extensive experience in various IT roles.
 
@@ -52,8 +52,8 @@ uv run main.py
 ```bash
 # Setup Environment
 pyenv install 3.9
-pyenv virtualenv 3.9 demo-bank
-pyenv local demo-bank
+pyenv virtualenv 3.9 onsole-careerpage-chatbot
+pyenv local onsole-careerpage-chatbot
 pip install -r requirements.txt
 
 # Start the Application
@@ -89,16 +89,6 @@ Enable LLM tracing with [Arize Phoenix](https://phoenix.arize.com) in the `.env`
 
 ---
 
-### Jupyter Notebook
-
-```bash
-# Using uv
-uv run --with jupyter jupyter lab notebook.ipynb
-
-# Using pyenv / virtualenv
-pip install jupyter
-jupyter lab notebook.ipynb
-```
 
 ## Architecture
 
@@ -107,9 +97,9 @@ jupyter lab notebook.ipynb
 1. [RAG Engine](engine.py) for document ingestion, indexing, and query processing using the `LangChain` library and `OpenAI` model.
 2. [API Server](api.py) with `FastAPI` endpoints for chat, reindexing, and session management.
 3. [HTML](static/index.html) & [React JS](static/app.js) frontend.
-4. [Dataset](data/acme_bank_faq.txt) for the RAG engine.
-5. [Experiment Runner](.multinear/task_runner.py) entry point for `Multinear` platform.
-6. [Configuration](.multinear/config.yaml) for evaluation tasks.
+4. [Dataset](data/console_careers.txt) for the RAG engine.
+5. [Experiment Runner](.console/task_runner.py) entry point for `console` platform.
+6. [Configuration](.console/config.yaml) for evaluation tasks.
 
 ## Experimentation Platform
 
@@ -119,18 +109,18 @@ jupyter lab notebook.ipynb
 
 1. **Define Tasks**
 
-   Configure your evaluation tasks in `.multinear/config.yaml`. Each task represents a specific input scenario for the customer support bot, and defines how to evaluate the output.
+   Configure your evaluation tasks in `.console/config.yaml`. Each task represents a specific input scenario for the career page chat bot, and defines how to evaluate the output.
 
 2. **Execute Experiments**
 
-   Run `Multinear` platform.
+   Run `console` platform.
 
     ```bash
     # Using uv
-    uv run multinear web_dev
+    uv run console web_dev
 
     # Using pyenv / virtualenv
-    multinear web_dev
+    consoletinear web_dev
     ```
 
    Open http://127.0.0.1:8000 and start experimenting.
@@ -142,5 +132,5 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 <p align="center">
-    <i>Built by <a href="https://github.com/aovabo">Multinear</a>.</i>
+    <i>Built by <a href="https://github.com/aovabo">Alexander</a>.</i>
 </p>

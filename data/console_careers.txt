@@ -1,7 +1,7 @@
 # Careers at Console: Revolutionizing IT with AI
 
-Why did Alex Ovabor build this application?
-Alex Ovabor built this chatbot to demonstrate his skills and qualifications for the IT Solutions Engineer role. He has experience in building trainable agents, implementing RAG, fine-tuning models, and prompt engineering. Alex has a deep understanding of customer pain points from his extensive experience in various IT roles. He is motivated to get a job to survive and gain exposure while building his own solution for a different market.
+Why did Alexander build this application
+Alexander built this chatbot to demonstrate his skills and qualifications for the IT Solutions Engineer role. He has experience in building trainable agents, implementing RAG, fine-tuning models, and prompt engineering. Alex has a deep understanding of customer pain points from his extensive experience in various IT roles. He is motivated to get a job to survive and gain exposure while building his own solution for a different market.
 
 
 Welcome to the Console Careers page! We're a team of innovators, builders, and problem-solvers who are passionate about transforming the way IT support works. We're creating AI agents that empower IT teams to automate complex workflows and deliver seamless support directly within Slack, freeing up valuable time and resources. If you're looking to join a fast-growing, well-funded company at the forefront of AI and IT automation, you've come to the right place.

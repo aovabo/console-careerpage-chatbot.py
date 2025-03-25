@@ -1,5 +1,5 @@
 """
-LLM observability configuration for the Bank Customer Support app.
+LLM observability configuration for the Console Career Page Chatbot.
 Provides integration with various tracing tools based on environment variables:
 - Logfire (https://logfire.pydantic.dev)
 - Arize Phoenix (https://phoenix.arize.com)

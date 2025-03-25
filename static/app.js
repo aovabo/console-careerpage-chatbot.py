@@ -247,12 +247,12 @@ const Header = () => (
  */
 const PreClickPrompts = () => {
     const prompts = [
-        "Tell me about the AI Engineer role.",
-        "What does a Product Designer do at Console?",
-        "Describe the responsibilities of a Full-stack Software Engineer.",
-        "What is the role of a Founding Account Executive?",
-        "How can I apply for a job at Console?",
-        "Why did Alex Ovabor build this application?"
+        "Tell me about the AI Engineer role",
+        "What does a Product Designer do at Console",
+        "Describe the responsibilities of a Full-stack Software Engineer",
+        "What is the role of a Founding Account Executive",
+        "How can I apply for a job at Console",
+        "Why did Alexander build this application"
     ];
 
     const handlePromptClick = (prompt) => {
@@ -397,7 +397,7 @@ const Footer = () => (
     <footer className="bg-gray-100 p-6 py-4 text-center text-sm text-gray-600 border-t border-gray-200">
         <p className="flex items-center justify-center">
             <span>Built by</span>
-            <a href="https://github.com/aovabo/console-careerpage-chatbot.py" target="_blank" className="text-indigo-600 hover:text-indigo-800 px-1">Alex Ovabor</a>
+            <a href="https://github.com/aovabo/console-careerpage-chatbot.py" target="_blank" className="text-indigo-600 hover:text-indigo-800 px-1">Alexander</a>
             2025 for the role of IT Solutions Engineer (ex-Sysadmin)
             <span className="text-gray-400 px-2">|</span>
             <a href="https://github.com/aovabo/console-careerpage-chatbot.py" 
