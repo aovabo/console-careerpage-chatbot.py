@@ -14,7 +14,7 @@ That's exactly what the Multinear platform is for. Multinear allows developers t
 
 ## Why Did Alex Ovabor Build This Application?
 
-Alex Ovabor built this chatbot to demonstrate his skills and qualifications for the IT Solutions Engineer role. He has experience in building trainable agents, implementing RAG, fine-tuning models, and prompt engineering. Alex has a deep understanding of customer pain points from his extensive experience in various IT roles. He is motivated to get a job to survive and gain exposure while building his own solution for a different market.
+Alexander built this chatbot to demonstrate his skills and qualifications for the IT Solutions Engineer role. He has experience in building trainable agents, implementing RAG, fine-tuning models, and prompt engineering. Alex has a deep understanding of customer pain points from his extensive experience in various IT roles.
 
 ## Installation
 
@@ -142,5 +142,5 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 <p align="center">
-    <i>Built by <a href="https://multinear.com">Multinear</a>.</i>
+    <i>Built by <a href="https://github.com/aovabo">Multinear</a>.</i>
 </p>
