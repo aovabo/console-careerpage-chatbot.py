@@ -12,7 +12,7 @@ The <span style="color: red">real challenge</span> is to ensure that this bot is
 
 That's exactly what the Multinear platform is for. Multinear allows developers to define evaluations in a simple yet powerful way and iteratively develop their GenAI applications, ensuring reliability and security.
 
-## Why Did Alex Ovabor Build This Application?
+## Why Did Alexander Build This Application?
 
 Alexander built this chatbot to demonstrate his skills and qualifications for the IT Solutions Engineer role. He has experience in building trainable agents, implementing RAG, fine-tuning models, and prompt engineering. Alex has a deep understanding of customer pain points from his extensive experience in various IT roles.
 
